@@ -4,14 +4,13 @@
 #'
 #' @export
 pyl_palettes <- list(
-  blankwhite = c("#000000", "#404040", "#7F7F7F", "#BFBFBF", "#FFFFFF"),
+  blackwhite = c("#000000", "#404040", "#7F7F7F", "#BFBFBF", "#FFFFFF"),
   funcore = c("#331F16", "#C5BBAC", "#ECE1D2", "#B3B3B3", "#333333"),
   funcore1 = c("#626F76", "#4E5255", "#331F16", "#C5BBAC" ,"#9B9483","#ECE1D2","#B3B3B3"),
   blue = c("#222A35", "#333F50", "#8497B0", "#ADB9CA" ,"#D6DCE5"),
   pink = c("#4C3A32", "#C2A097", "#D18679", "#F7C9C0", "#FFF6EB"),
   beach = c("#283949", "#7786A3", "#CDD8DF", "#F3F2EE", "#E4DAD4", "#BA9A88", "#563F31")
 )
-
 #' My colour palette generator
 #'
 #' These are some colours that I often use in analyses or presentation
@@ -74,9 +73,8 @@ print.palette <- function(x, ...) {
   rect(0, 0.9, n + 1, 1.1, col = rgb(1, 1, 1, 0.8), border = NA)
   text((n + 1) / 2, 1, labels = attr(x, "name"), cex = 1.5, family = "mono",font=2)
 }
-pyl_palette("funcore1")
+
 #' heatmap
 #'
 #' A heatmap example
 "heatmap"
-
